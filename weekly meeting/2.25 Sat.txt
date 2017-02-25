@@ -1,0 +1,39 @@
+A few things to be clarified:
+1. I have already created the template, including:
+	- Header
+	- A carousel
+	- A search bar
+	- pictures inline that can be used as links
+	- News zone
+	- Sending email area (if we have a chatbot that part may be replaced)
+	- footage
+These are not expected to be all used in one single page. Instead, they can be used potentially by 
+some other features we want to add. We can extend my header and footage while inserting different 
+information in various pages. 
+
+2. Plan on the pages that we need.
+   As what I have listed in header selection bar, we need four major parts migrated from Android:
+	- Learn, which is a list of scroll bars containing information in detail. 
+		Q: Are these texts loaded from database or directly stored in HTML file? (guess we better
+		make them )
+	- See, a map containing marks on stations that people can seek help.
+	- Watch, a page that contains a youtube video.
+	- About, some information about us, our purpose in building this app, and what are some researches,
+	  progress we have made in this field.
+   These are parts we can split out works. 
+
+   Q: What are some extra features we need. (I remember something like discussion forum we talked about last
+	time)
+
+3. Connections to backend.
+
+4. What host we will be using. Suggestions?
+
+5. Schedule.
+	- 2.25-3.4
+	- 3.4-3.11
+	- 3.11-3.18
+	- 3.18-3.25
+	- 3.25-4.1
+
+	
