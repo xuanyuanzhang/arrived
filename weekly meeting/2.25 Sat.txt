@@ -1,21 +1,10 @@
-A few things to be clarified:
-1. I have already created the template, including:
-	- Header
-	- A carousel
-	- A search bar
-	- pictures inline that can be used as links
-	- News zone
-	- Sending email area (if we have a chatbot that part may be replaced)
-	- footage
-These are not expected to be all used in one single page. Instead, they can be used potentially by 
-some other features we want to add. We can extend my header and footage while inserting different 
-information in various pages. 
 
-2. Plan on the pages that we need.
+1. Plan on the pages that we need.
+
    As what I have listed in header selection bar, we need four major parts migrated from Android:
 	- Learn, which is a list of scroll bars containing information in detail. 
 		Q: Are these texts loaded from database or directly stored in HTML file? (guess we better
-		make them )
+		make them connected to database for automatic update) XML from website. 
 	- See, a map containing marks on stations that people can seek help.
 	- Watch, a page that contains a youtube video.
 	- About, some information about us, our purpose in building this app, and what are some researches,
@@ -24,16 +13,26 @@ information in various pages.
 
    Q: What are some extra features we need. (I remember something like discussion forum we talked about last
 	time)
+   A: 
+      -	backend editing allow researchers Q&A. Translators provide translation. User friendly way
+	to edit. 
+      - web app having own users can ask questions. (community)
 
-3. Connections to backend.
+2. What host we will be using. Suggestions?
+	We have free azure credits. (azure!)
 
-4. What host we will be using. Suggestions?
-
-5. Schedule.
-	- 2.25-3.4
-	- 3.4-3.11
-	- 3.11-3.18
+3. Schedule.
+	- 2.25-3.4 local host on a basic template
+	- 3.4-3.11 
+	- 3.11-3.18 
 	- 3.18-3.25
 	- 3.25-4.1
+
+Cookie to keep track of user. (already in android, need similar features) No user login, but need to check 
+user's status by tracking their IP. 
+Getting a scale on how many users are using the web.
+arrived.us Address. Merge into the home webpage. 
+2-3 weeks to complete
+Knowledge bank: Expect string response. 
 
 	
