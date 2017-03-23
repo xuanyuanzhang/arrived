@@ -1,0 +1,78 @@
+{% extends "frame.html" %}
+{% load staticfiles %}
+
+{% block head %}
+    <style>
+    .dropdown{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    </style>
+{% endblock %}
+
+{% block content%}
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Welcome</h1>
+                <a href="#detail" class="btn btn-primary btn-xl page-scroll">Move on for more details</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="navbar-example" class="navbar navbar-static">
+                      <div class="navbar-inner">
+                        <div class="container" style="width: auto;">
+
+                          <ul class="nav" role="navigation">
+                            <li class="dropdown">
+                              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                  {% for node in homepage %}
+                                        <li><a tabindex="-1" href='#{{ node }}'>{{ node }}</a></li>
+                                  {% endfor %}
+                              </ul>
+                            </li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% for node in table %}
+    <section class="bg-primary" id="{{ node.0 }}">
+        <div class="container">
+            <h1>{{ node.0 }}</h1>
+            <div class="col-lg-10 col-md-8 col-sm-6 col-xs-3">
+                {% for sub_node in node.1 %}
+                    <p>Q: {{ sub_node.0 }}</p>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ sub_node.2 }}">Answer</button>
+                    <div id="{{ sub_node.2 }}" class="collapse">
+                    <p> A: {{ sub_node.1 }}</p>
+                    </div>
+
+                {% endfor %}
+            </div>
+
+            <div class="col-lg-offset-10 col-md-offset-10 col-sm-offset-10 col-xs-offset-10">
+                <a href="#detail" class="btn btn-info page-scroll">back</a>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+
+
+{% endblock %}

@@ -37,6 +37,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tracking',
+    'books',
+    'webpages',
+    'geoposition',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -48,6 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
 )
 
 ROOT_URLCONF = 'mysite.urls'
@@ -55,7 +60,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'webpage/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'webpage/../webpages/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,6 +86,11 @@ DATABASES = {
     }
 }
 
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST_USER = '948201016@qq.com'
+EMAIL_HOST_PASSWORD = '19671125zhang'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -94,6 +104,17 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+GEOPOSITION_GOOGLE_MAPS_API_KEY = 'YOUR_API_KEY'
+
+GEOPOSITION_MAP_OPTIONS = {
+    'minZoom': 3,
+    'maxZoom': 15,
+}
+
+GEOPOSITION_MARKER_OPTIONS = {
+    'cursor': 'move'
+}
 
 
 # Static files (CSS, JavaScript, Images)

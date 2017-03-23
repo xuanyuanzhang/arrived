@@ -1,0 +1,89 @@
+{% extends "frame.html" %}
+{% load staticfiles %}
+
+{% block head %}
+    <style>
+    #map{
+        height:400px;
+        width:100%;
+        background-color: grey;
+    }
+    </style>
+{% endblock %}
+
+{% block content%}
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Welcome</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% for node in table %}
+    <section class="bg-primary">
+        <div class="container">
+            <h1>{{ node.0 }}</h1>
+            <div class="col-lg-10 col-md-8 col-sm-6 col-xs-3">
+                <p>address: {{ node.1 }}</p>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ node.4 }}">coordinate</button>
+                <div id="{{ node.4 }}" class="collapse">
+                <p> Coordinate: {{ node.3.1 }} , {{ node.3.0 }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+
+
+    <script>
+      function initMap() {
+          var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+          var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 4,
+              center: {lat: 39, lng: -95}
+          });
+
+          //for(var i=0;i<locations.length;i++){
+          //    document.write(locations[0]);
+          //}
+
+          {% for node in table %}
+
+              var marker = new google.maps.Marker({
+                  position: {lat: {{ node.3.1 }}, lng: {{ node.3.0 }}},
+                  map: map,
+                  icon: image,
+                  name: "{{ node.0 }}",
+                  address: "{{ node.1 }}"
+              });
+
+              var infowindow = new google.maps.InfoWindow();
+              var content = '<div> {{ node.0 }} </div>';
+
+              google.maps.event.addListener(marker, 'click',
+                  (function(marker, content, infowindow){
+                      return function(){
+                          infowindow.setContent(content);
+                          infowindow.open(map, marker);
+                      };
+                  })(marker, content, infowindow));
+
+          {% endfor %}
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJP6zF7iJH-Dsq58-r2PzD-9HiHyvRZZU&callback=initMap">
+    </script>
+{% endblock %}

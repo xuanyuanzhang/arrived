@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Xuanyuan">
+
+    <title>Xuanyuan</title>
+    {% load staticfiles %}
+    <!-- Bootstrap Core CSS -->
+    <link href={% static 'vendor/bootstrap/css/bootstrap.min.css' %} rel="stylesheet" type = "text/css">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- Plugin CSS -->
+    <link href={% static 'vendor/magnific-popup/magnific-popup.css' %} rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href= {% static 'css/creative.min.css' %}  rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src={% static 'vendor/jquery/jquery.min.js' %}></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src={% static 'vendor/bootstrap/js/bootstrap.min.js' %}></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    {% block head %}
+    {% endblock %}
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/index/">Welcome!</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/index/"><span class="glyphicon glyphicon-home" aria-hidden="true">
+                        </span> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/learn/"><span class="glyphicon glyphicon-tags" aria-hidden="true">
+                        </span> Learn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/see/"><span class="glyphicon glyphicon-globe" aria-hidden="true">
+                        </span> See
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/watch/"><span class="glyphicon glyphicon-headphones" aria-hidden="true">
+                        </span> Watch
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact/"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">
+                        </span> About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+</body>
+    <!-- Footer -->
+    <footer class="page-footer">
+		<br>
+        <div class="container">
+            <div class="row page-footer-top">
+				<br>
+				<div class="row page-footer-bottom">
+					<aside class="col-lg-3">
+						<img src={% static 'img/icon_2.jpg' %}>
+					</aside>
+					<aside class="col-lg-3 col-md-4 col-xs-5">
+						<h5 class="title">our contact info</h5>
+						<address>
+							<a>william@arrived.us</a>
+							<br>
+						</address>
+					</aside>
+					<aside class="col-lg-3 col-xs-4">
+						<h5>Keep in touch with us</h5>
+						<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true"
+                                class="twitter-follow-button twitter-follow-button-rendered"
+                                title="Twitter Follow Button"
+                                src="http://platform.twitter.com/widgets/follow_button.a0ec3119d8db2bc5422f2144c89ad7a9.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=arrived_app&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1489783809364"
+                                style="position: static; visibility: visible; width: 136px; height: 20px;" data-screen-name="arrived_app">
+                        </iframe>
+					</aside>
+                </div>
+
+				<div class="col-lg-offset-5 col-md-offset-3">
+					<address>Copy Right: Xuanyuan Zhang</address>
+					<address>@ 2017 Arrived</address>
+				</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
