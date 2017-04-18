@@ -7,6 +7,7 @@
         height:400px;
         width:100%;
         background-color: grey;
+        color: #222222;
     }
     </style>
 {% endblock %}
@@ -16,7 +17,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Welcome</h1>
+                <h1 id="homeHeading">See</h1>
             </div>
         </div>
     </header>
@@ -68,19 +69,35 @@
                   name: "{{ node.0 }}",
                   address: "{{ node.1 }}"
               });
-
-              var infowindow = new google.maps.InfoWindow();
+              google.maps.InfoWindow.prototype.opened = false;
               var content = '<div> {{ node.0 }} </div>';
-
+              var infowindow = new google.maps.InfoWindow({content: content});
               google.maps.event.addListener(marker, 'click',
                   (function(marker, content, infowindow){
                       return function(){
-                          infowindow.setContent(content);
-                          infowindow.open(map, marker);
+                          if(!infowindow.opened){
+                              infowindow.open(map, marker);
+                              infowindow.opened = true;
+                          }
+{#                        infoWindow.open(map, marker);#}
                       };
                   })(marker, content, infowindow));
-
+              google.maps.event.addListener(map, 'click',
+                  (function(map, content, infowindow){
+                      return function(){
+                          if(infowindow.opened){
+                              infowindow.close();
+                              infowindow.opened = false;
+                          }
+                      };
+                  })(map, content, infowindow));
           {% endfor %}
+
+      }
+
+      function isInfoWindowOpen(infoWindow){
+          var map = infoWindow.getMap();
+          return (map !== null && typeof map !== "undefined");
       }
     </script>
     <script async defer

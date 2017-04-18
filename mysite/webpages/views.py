@@ -4,10 +4,14 @@ from bs4 import BeautifulSoup
 import os
 from django.core.mail import send_mail
 from webpages.forms import ContactForm
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpRequest
 from django.conf import settings
+from ipware.ip import get_trusted_ip
+
 
 def index(request):
+    ip = get_client_ip(request)
+    # return render(request, 'index.html', {'ip', ip})
     return render(request, 'index.html')
 
 
@@ -19,13 +23,13 @@ def learn(request):
     table = []
     homepage = scraper2.get_homepage()
     visa = scraper2.get_visaHelp_QnA()
-    table.append(["Visa Help", visa])
+    table.append(["Visa_Help", visa])
     career = scraper2.get_careerGuidance_QnA()
-    table.append(["Job Assistance", career])
+    table.append(["Job_Assistance", career])
     legal = scraper2.get_legalHelp_QnA()
-    table.append(["Legal Section", legal])
+    table.append(["Legal_Section", legal])
     deportation = scraper2.get_deportationHelp_QnA()
-    table.append(["Deportation Help", deportation])
+    table.append(["Deportation_Help", deportation])
     driving = scraper2.get_driving_QnA()
     table.append(["Driving", driving])
     english = scraper2.get_englishHelp_QnA()
@@ -33,16 +37,15 @@ def learn(request):
     faq = scraper2.get_faq_QnA()
     table.append(["FAQ", faq])
     financial = scraper2.get_financial_QnA()
-    table.append(["Financial Advice", financial])
+    table.append(["Financial_Advice", financial])
     housing = scraper2.get_housing_QnA()
     table.append(["Housing", housing])
     mexican = scraper2.get_mexicanNational_QnA()
-    table.append(["Mexican Nationals", mexican])
+    table.append(["Mexican_Nationals", mexican])
     support = scraper2.get_supportGroups_QnA()
-    table.append(["Support Groups", support])
+    table.append(["Support_Groups", support])
     immigration = scraper2.get_immigrationReform_QnA()
-    table.append(["Immigration Reform/DACA/Trump Plans 2017", immigration])
-    print table
+    table.append(["Immigration_Reform-DACA-Trump_Plans_2017", immigration])
     return render(request, 'learn.html', {'homepage': homepage, 'table': table})
     # return render(request, 'learn.html',
     #               {'table':homepage, 'visaHelp':visa, 'housing':housing,
@@ -87,16 +90,25 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            cd = form.cleaned_data
-            from_email = settings.EMAIL_HOST_USER
+            cd=form.cleaned_data
+            from_email=settings.EMAIL_HOST_USER
             send_mail(
                 cd['subject'],
                 cd['message'],
                 from_email,
                 ['530310387@qq.com'],
-                fail_silently= False
+                fail_silently=False
             )
             return HttpResponseRedirect('/contact/thanks/')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form':form})
+
+
+def get_client_ip(request):
+    ip = get_trusted_ip(request)
+    if ip is not None:
+        print("we have an IP address for user")
+    else:
+        print("we don't have an IP address for user")
+    return ip

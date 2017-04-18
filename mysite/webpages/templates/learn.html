@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block head %}
-    <style>
+    <style xmlns:white-space="http://www.w3.org/1999/xhtml">
     .dropdown{
         display: none;
         position: absolute;
@@ -19,13 +19,12 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Welcome</h1>
-                <a href="#detail" class="btn btn-primary btn-xl page-scroll">Move on for more details</a>
+                <h1 id="homeHeading">Learn</h1>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="detail">
+    <section class="bg-primary" id="dropdown">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -35,15 +34,15 @@
 
                           <ul class="nav" role="navigation">
                             <li class="dropdown">
-                              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                              <a id="drop1" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                              <ul id="dropbars" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                                   {% for node in homepage %}
-                                        <li><a tabindex="-1" href='#{{ node }}'>{{ node }}</a></li>
+                                      <li ><a tabindex="-1" id="{{ node.2 }}" >{{ node.0 }}</a></li>
+
                                   {% endfor %}
                               </ul>
                             </li>
                           </ul>
-
                         </div>
                       </div>
                     </div>
@@ -53,26 +52,33 @@
     </section>
 
     {% for node in table %}
-    <section class="bg-primary" id="{{ node.0 }}">
+    <div class="bg-primary, collapse" id="{{ node.0 }}" >
         <div class="container">
             <h1>{{ node.0 }}</h1>
             <div class="col-lg-10 col-md-8 col-sm-6 col-xs-3">
                 {% for sub_node in node.1 %}
                     <p>Q: {{ sub_node.0 }}</p>
                     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ sub_node.2 }}">Answer</button>
-                    <div id="{{ sub_node.2 }}" class="collapse">
-                    <p> A: {{ sub_node.1 }}</p>
+                    <div id="{{ sub_node.2 }}" class="collapse" style="white-space:pre-wrap">
+                    <p>A: {{ sub_node.1 }}</p>
                     </div>
-
                 {% endfor %}
             </div>
-
-            <div class="col-lg-offset-10 col-md-offset-10 col-sm-offset-10 col-xs-offset-10">
-                <a href="#detail" class="btn btn-info page-scroll">back</a>
-            </div>
         </div>
-    </section>
+    </div>
     {% endfor %}
+
+    <script>
+        {% for node in homepage %}
+            $("#{{ node.2 }}").click(function(){
+                $("#{{ node.1 }}").slideDown();
+                return false;
+            });
+            $(document).dblclick(function(){
+                $("#{{ node.1 }}").slideUp();
+            });
+        {% endfor %}
+    </script>
 
 
 {% endblock %}
