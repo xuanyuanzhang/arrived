@@ -65,20 +65,30 @@
     <!-- Main Content -->
     <br>
     <div class="well well-sm">
-        <p class="text-center"> Add features in cas window with links redirect to other pages.</p>
+        <p class="text-center"> Dear visitor {{ ip }}</p>
     </div>
 	<!-- Search zone -->
 	<section class="bg-primary" id="search">
-        <div class="container">
-			<div class="col-lg-6 col-lg-offset-3 form-group">
-				<label href="" class="glyphicon glyphicon-search" >Search: </label>
-				<input type="text" class="form-control" id="input"><br>
-				<button type="button" class="btn btn-lg btn-default pull-right">Submit</button>
-			</div>
-        </div>
+        <form action="" method="post">
+{#            <aside class="col-lg-2 col-lg-offset-1">#}
+            <div class="container">
+                <aside class="col-lg-1 col-lg-offset-1">
+                    <img src={% static 'img/jarvis.jpg' %}>
+                </aside>
+                <div class="col-lg-6 col-lg-offset-3 form-group">{% csrf_token %}
+                    <label href="" class="glyphicon glyphicon-search" >Search: </label>
+                    <input type="text" name="textfield" class="form-control" id="input"><br>
+                    <button type="submit" class="btn btn-lg btn-default pull-right">Submit</button>
+                </div>
+                <div class="container">
+                    <div class="col-lg-6 col-lg-offset-3 form-group">
+                        <h3 id="content"> {{ text }} </h3>
+                    </div>
+                </div>
+            </div>
+        </form>
     </section>
 
-{#        <p>{{ ip }}</p>#}
 	<!-- links to other pages for each feature -->
     <section class="no-padding" id="name">
 		<br>

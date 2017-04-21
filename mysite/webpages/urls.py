@@ -13,7 +13,6 @@ Including another URLconf
     1. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-
 from webpages import views
 
 urlpatterns = [
@@ -23,4 +22,5 @@ urlpatterns = [
     url(r'^learn/$', views.learn, name='learn'),
     url(r'^see/$', views.see, name='see'),
     url(r'^contact/$', views.contact, name='contact'),
+    url(r'^chat/$', views.chat, name='chat'),
 ]

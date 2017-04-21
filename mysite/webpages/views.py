@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
+from django.template import RequestContext
 import scraper2
 from bs4 import BeautifulSoup
 import os
@@ -6,17 +7,20 @@ from django.core.mail import send_mail
 from webpages.forms import ContactForm
 from django.http import HttpResponseRedirect, HttpRequest
 from django.conf import settings
-from ipware.ip import get_trusted_ip
+from ipware.ip import get_ip
 
 
 def index(request):
     ip = get_client_ip(request)
-    # return render(request, 'index.html', {'ip', ip})
-    return render(request, 'index.html')
+    if request.method == 'POST':
+        text = request.POST["textfield"]
+        return render_to_response('index.html', {"ip": ip, "text": text}, context_instance=RequestContext(request))
+    # this part needs to be modified that fits to Jarvis's input
+    return render_to_response('index.html', {"ip": ip}, context_instance=RequestContext(request))
 
 
 def watch(request):
-    return render(request, 'watch.html')
+    return render_to_response('watch.html')
 
 
 def learn(request):
@@ -47,13 +51,6 @@ def learn(request):
     immigration = scraper2.get_immigrationReform_QnA()
     table.append(["Immigration_Reform-DACA-Trump_Plans_2017", immigration])
     return render(request, 'learn.html', {'homepage': homepage, 'table': table})
-    # return render(request, 'learn.html',
-    #               {'table':homepage, 'visaHelp':visa, 'housing':housing,
-    #                'careerGuidance':career, 'legalHelp':legal,
-    #                'deportationHelp':deportation, 'driving':driving,
-    #                'englishHelp':english, 'faq':faq, 'financial':financial,
-    #                'mexicanNational':mexican, 'supportGroups':support,
-    #                'immigrationReform':immigration})
 
 
 def see(request):
@@ -105,10 +102,18 @@ def contact(request):
     return render(request, 'contact.html', {'form':form})
 
 
+def chat(request):
+    return render(request, 'chat.html')
+
+
 def get_client_ip(request):
-    ip = get_trusted_ip(request)
+    ip = get_ip(request)
     if ip is not None:
         print("we have an IP address for user")
+        print(ip)
     else:
         print("we don't have an IP address for user")
     return ip
+
+
+# def client_question(input):

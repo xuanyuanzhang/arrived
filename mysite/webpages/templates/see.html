@@ -32,20 +32,20 @@
         </div>
     </section>
 
-    {% for node in table %}
-    <section class="bg-primary">
-        <div class="container">
-            <h1>{{ node.0 }}</h1>
-            <div class="col-lg-10 col-md-8 col-sm-6 col-xs-3">
-                <p>address: {{ node.1 }}</p>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ node.4 }}">coordinate</button>
-                <div id="{{ node.4 }}" class="collapse">
-                <p> Coordinate: {{ node.3.1 }} , {{ node.3.0 }}</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% endfor %}
+{#    {% for node in table %}#}
+{#    <section class="bg-primary">#}
+{#        <div class="container">#}
+{#            <h1>{{ node.0 }}</h1>#}
+{#            <div class="col-lg-10 col-md-8 col-sm-6 col-xs-3">#}
+{#                <p>address: {{ node.1 }}</p>#}
+{#                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{ node.4 }}">coordinate</button>#}
+{#                <div id="{{ node.4 }}" class="collapse">#}
+{#                <p> Coordinate: {{ node.3.1 }} , {{ node.3.0 }}</p>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+{#    {% endfor %}#}
 
 
     <script>
