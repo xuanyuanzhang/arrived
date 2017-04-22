@@ -50,6 +50,10 @@ def learn(request):
     table.append(["Support_Groups", support])
     immigration = scraper2.get_immigrationReform_QnA()
     table.append(["Immigration_Reform-DACA-Trump_Plans_2017", immigration])
+    emergency = scraper2.get_emergency_QnA()
+    table.append(["Emergency", emergency])
+    health = scraper2.get_health_QnA()
+    table.append(["Health_Knowledge", health])
     return render(request, 'learn.html', {'homepage': homepage, 'table': table})
 
 
@@ -108,11 +112,6 @@ def chat(request):
 
 def get_client_ip(request):
     ip = get_ip(request)
-    if ip is not None:
-        print("we have an IP address for user")
-        print(ip)
-    else:
-        print("we don't have an IP address for user")
     return ip
 
 

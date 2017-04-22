@@ -64,6 +64,9 @@
                     </div>
                 {% endfor %}
             </div>
+            <div class="col-lg-2 col-lg-offset-11">
+                <button id="{{ node.0 }}_back" type="button" class="btn btn-info">back</button>
+            </div>
         </div>
     </div>
     {% endfor %}
@@ -72,12 +75,30 @@
         {% for node in homepage %}
             $("#{{ node.2 }}").click(function(){
                 $("#{{ node.1 }}").slideDown();
-                return false;
+            });
+            $("#{{ node.1 }}_back").click(function(){
+                $("#{{ node.1 }}").slideUp();
             });
             $(document).dblclick(function(){
                 $("#{{ node.1 }}").slideUp();
             });
         {% endfor %}
+{#        var name_array = new Array();#}
+{#        var content_array = new Array();#}
+{#        var index = 0;#}
+{#        {% for node in homepage %}#}
+{#            name_array[index] = "{{ node.2 }}";#}
+{#            content_array[index] = "{{ node.1 }}";#}
+{#            index += 1;#}
+{#        {% endfor %}#}
+{#        for(var i=0; i<name_array.length; i++){#}
+{#            var name = name_array[i];#}
+{#            var content = content_array[i];#}
+{#            $("#name").click(function(){#}
+{#                $("#content").slideDown();#}
+{#                return false;#}
+{#            });#}
+{#        }#}
     </script>
 
 

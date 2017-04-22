@@ -51,6 +51,7 @@ def str_to_href(string):
 def get_about():
     about = soup.find(attrs={"name" : re.compile("^AboutUs")})
     email = soup.find(attrs={"mailto"})
+    print about
     return about
 
 
@@ -242,4 +243,34 @@ def get_immigrationReform_QnA():
         a.append(correction(thestrings))
     for i in range(len(q)):
         q_a_tuple.append([q[i], a[i],"immigrationReform"+str(i)])
+    return q_a_tuple
+
+
+def get_emergency_QnA():
+    q = []
+    a = []
+    q_a_tuple = []
+    for node in soup.findAll(attrs={"name": re.compile("^emergencyQuestion")}):
+        thestrings = [unicode(s) for s in node.findAll(text=True)]
+        q.append(correction(thestrings))
+    for node in soup.findAll(attrs={"name": re.compile("^emergencyAnswer")}):
+        thestrings = [unicode(s) for s in node.findAll(text=True)]
+        a.append(correction(thestrings))
+    for i in range(len(q)):
+        q_a_tuple.append([q[i], a[i],"emergency"+str(i)])
+    return q_a_tuple
+
+
+def get_health_QnA():
+    q = []
+    a = []
+    q_a_tuple = []
+    for node in soup.findAll(attrs={"name": re.compile("^healthQuestion")}):
+        thestrings = [unicode(s) for s in node.findAll(text=True)]
+        q.append(correction(thestrings))
+    for node in soup.findAll(attrs={"name": re.compile("^healthAnswer")}):
+        thestrings = [unicode(s) for s in node.findAll(text=True)]
+        a.append(correction(thestrings))
+    for i in range(len(q)):
+        q_a_tuple.append([q[i], a[i],"health"+str(i)])
     return q_a_tuple
