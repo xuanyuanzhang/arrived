@@ -14,9 +14,11 @@ def index(request):
     ip = get_client_ip(request)
     if request.method == 'POST':
         text = request.POST["textfield"]
-        return render_to_response('index.html', {"ip": ip, "text": text}, context_instance=RequestContext(request))
+        # return render_to_response('index.html', {"ip": ip, "text": text}, context_instance=RequestContext(request))
+        return render(request, 'index.html', {"ip": ip, "text": text})
     # this part needs to be modified that fits to Jarvis's input
-    return render_to_response('index.html', {"ip": ip}, context_instance=RequestContext(request))
+    # return render_to_response('index.html', {"ip": ip}, context_instance=RequestContext(request))
+    return render(request, 'index.html', {"ip": ip})
 
 
 def watch(request):
