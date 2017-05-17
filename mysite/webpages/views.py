@@ -8,9 +8,9 @@ from webpages.forms import ContactForm
 from django.http import HttpResponseRedirect, HttpRequest
 from django.conf import settings
 from ipware.ip import get_ip
-import pygeoip
+import geocoder
 
-import re
+import requests
 import json
 from urllib2 import urlopen
 import socket
@@ -39,16 +39,17 @@ def getUserInfo():
 
 def index(request):
     # ip = get_client_ip(request)
-    client_info = []
 
-    urlFoLaction = "http://www.freegeoip.net/json/{0}".format(get_client_ip(request))
-    locationInfo = json.loads(urlopen(urlFoLaction).read())
+    # urlFoLaction = "http://www.freegeoip.net/json/{0}".format(get_client_ip(request))
+    # locationInfo = json.loads(urlopen(urlFoLaction).read())
+    #
+    # client_info.append(locationInfo['city'])
+    # # client_info.append(locationInfo['region'])
+    # client_info.append(locationInfo['country_name'])
+    g = geocoder.ip(get_client_ip(request))
+    location = g.city + ", " + g.state + ", " + g.country
+    # location = client_info[0] + ", " + client_info[1]
 
-    client_info.append(locationInfo['city'])
-    # client_info.append(locationInfo['region'])
-    client_info.append(locationInfo['country_name'])
-
-    location = client_info[0] + ", " + client_info[1]
     if request.method == 'POST':
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         host = "127.0.0.1"
