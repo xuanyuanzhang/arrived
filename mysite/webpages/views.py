@@ -9,16 +9,47 @@ from django.http import HttpResponseRedirect, HttpRequest
 from django.conf import settings
 from ipware.ip import get_ip
 
+import re
+import json
+from urllib2 import urlopen
+import socket
+
+
+def getUserInfo():
+    url = "http://ipinfo.io/json"
+    response = urlopen(url)
+    data = json.load(response)
+
+    IP = data['ip']
+    city = data['city']
+    country = data['country']
+    region = data['region']
+
+    content = []
+    # content.append(IP)
+    content.append(city)
+    content.append(region)
+    content.append(country)
+
+    return content
+
 
 def index(request):
-    ip = get_client_ip(request)
+    # ip = get_client_ip(request)
+    client_info = getUserInfo()
+    location = client_info[0] + ", " + client_info[1] + ", " + client_info[2]
     if request.method == 'POST':
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        host = "127.0.0.1"
+        port = "10003"
+        s.connect((host, int(port)))
         text = request.POST["textfield"]
-        # return render_to_response('index.html', {"ip": ip, "text": text}, context_instance=RequestContext(request))
-        return render(request, 'index.html', {"ip": ip, "text": text})
-    # this part needs to be modified that fits to Jarvis's input
-    # return render_to_response('index.html', {"ip": ip}, context_instance=RequestContext(request))
-    return render(request, 'index.html', {"ip": ip})
+        s.send(text)
+        data = s.recv(2048)
+        print "data is: " + data
+        s.close()
+        return render(request, 'index.html', {"location": location, "text": data})
+    return render(request, 'index.html', {"location": location})
 
 
 def watch(request):
