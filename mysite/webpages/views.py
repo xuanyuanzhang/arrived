@@ -59,8 +59,12 @@ def index(request):
         s.send(text)
         data = s.recv(2048)
         print "data is: " + data
-        s.close()
-        return render(request, 'index.html', {"location": location, "text": data})
+        if data[0:5] == "https":
+		dataTuple = [data, "url"]
+	else:
+		dataTuple = [data, "str"]
+	s.close()
+        return render(request, 'index.html', {"location": location, "text": dataTuple})
     return render(request, 'index.html', {"location": location})
 
 
