@@ -85,9 +85,11 @@
                 </div>
                 <div class="container">
                     <div class="col-lg-6 col-lg-offset-3 form-group">
-                        <h3 id="content"> {{ text }} </h3>
+                        <h3 id="url_content"> https://drive.google.com/open?id=152wBFPA9kV65983Ybv-UbVufa0c&usp=sharing </h3>
+                        <button onclick="openURL()">Try it</button>
                     </div>
                 </div>
+
             </div>
         </form>
     </section>
@@ -98,7 +100,7 @@
         <div class="container-fluid">
                 <div class="col-lg-4 col-sm-6">
                     <a href="" class="portfolio-box">
-                        <img src= {% static 'img/box/train.jpg' %} class="img-responsive">
+                        <img src= {% static "img/box/train.jpg" %} class="img-responsive">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -239,4 +241,11 @@
 		</div>
 	</section>
 
+    <script>
+        function openURL() {//
+            var URL;
+            URL = document.getElementById('url_content').textContent;
+            window.open(URL);
+        }
+    </script>
     {% endblock %}
