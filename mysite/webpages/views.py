@@ -9,58 +9,20 @@ from django.http import HttpResponseRedirect, HttpRequest
 from django.conf import settings
 from ipware.ip import get_ip
 import geocoder
-
-import requests
-import json
-from urllib2 import urlopen
 import socket
 
 
-def getUserInfo():
-    url = "http://ipinfo.io/json"
-    response = urlopen(url)
-    print type(response)
-    print "response is: " + str(response)
-    data = json.load(response)
-
-    IP = data['ip']
-    city = data['city']
-    country = data['country']
-    region = data['region']
-
-    content = []
-    # content.append(IP)
-    content.append(city)
-    content.append(region)
-    content.append(country)
-
-    return content
-
-
 def index(request):
-    # ip = get_client_ip(request)
-
-    # urlFoLaction = "http://www.freegeoip.net/json/{0}".format(get_client_ip(request))
-    # locationInfo = json.loads(urlopen(urlFoLaction).read())
-    #
-    # client_info.append(locationInfo['city'])
-    # # client_info.append(locationInfo['region'])
-    # client_info.append(locationInfo['country_name'])
     g = geocoder.ip(get_client_ip(request))
-    location = g.city + ", " + g.state + ", " + g.country
-    # location = client_info[0] + ", " + client_info[1]
+    print g.city
+
+    # location = g.city + ", " + g.state + ", " + g.country
+    # hard coded location
+    location = "New York, New York, US"
 
     if request.method == 'POST':
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        host = "127.0.0.1"
-        port = "10003"
-        s.connect((host, int(port)))
         text = request.POST["textfield"]
-        s.send(text)
-        data = s.recv(2048)
-        print "data is: " + data
-        s.close()
-        return render(request, 'index.html', {"location": location, "text": data})
+        return render(request, 'index.html', {"location": location, "text": text})
     return render(request, 'index.html', {"location": location})
 
 

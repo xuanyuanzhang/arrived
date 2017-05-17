@@ -49,16 +49,29 @@
 
 
     <script>
+
+    var geocoder, map;
+
       function initMap() {
           var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-          var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 4,
-              center: {lat: 39, lng: -95}
-          });
+          geocoder = new google.maps.Geocoder();
+          geocoder.geocode({
+            'address': address
+          }, function(results, status){
+            if(status == google.maps.GeocoderStatus.OK){
+                map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 8,
+                  center: results[0].geometry.location,
+                });
+            }
+            else{
+                map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: {lat: 39, lng: -95},
+                });
+            }
+          };
 
-          //for(var i=0;i<locations.length;i++){
-          //    document.write(locations[0]);
-          //}
 
           {% for node in table %}
 
