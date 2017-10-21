@@ -48,23 +48,24 @@ def index(request):
     # client_info.append(locationInfo['country_name'])
     g = geocoder.ip(get_client_ip(request))
     location = g.city + ", " + g.state + ", " + g.country
-    # location = client_info[0] + ", " + client_info[1]
 
     if request.method == 'POST':
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1);
         host = "127.0.0.1"
         port = "10003"
         s.connect((host, int(port)))
         text = request.POST["textfield"]
-        s.send(text)
-        data = s.recv(2048)
-        print "data is: " + data
-        if data[0:5] == "https":
-		dataTuple = [data, "url"]
-	else:
-		dataTuple = [data, "str"]
-	s.close()
-        return render(request, 'index.html', {"location": location, "text": dataTuple})
+	if text != "":
+		s.send(text)
+		data = s.recv(2048)
+		print "data is: " + data
+		if data[0:5] == "https":
+			dataTuple = [data, "url"]
+		else:
+			dataTuple = [data, "str"]
+		s.close()
+		return render(request, 'index.html', {"location": location, "text": dataTuple})
     return render(request, 'index.html', {"location": location})
 
 

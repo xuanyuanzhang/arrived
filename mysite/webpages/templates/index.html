@@ -35,7 +35,8 @@
     {% endblock %}
 
     {% block content %}
-    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+	<div id="theCarousel" class="carousel slide" data-ride="carousel">
 
 		<ol class="carousel-indicators">
 			<li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
@@ -62,6 +63,7 @@
 		</div>
 
 	</div>
+
     <!-- Main Content -->
     <br>
     <div class="well well-sm">
@@ -83,16 +85,24 @@
                     <input type="text" name="textfield" class="form-control" id="input"><br>
                     <button type="submit" class="btn btn-lg btn-default pull-right">Ask</button>
                 </div>
+		{% if text.1 == "str"%}
                 <div class="container">
                     <div class="col-lg-6 col-lg-offset-3 form-group">
-                        <h3 id="content"> {{ text }} </h3>
+                        <h3 id="str_content"> {{ text.0 }} </h3>
                     </div>
                 </div>
+		{% elif text.1 == "url"%}
+                <div class="container">
+                    <div class="col-lg-6 col-lg-offset-3 form-group">
+                        <h3 id="url_content"> {{ text.0 }}  </h3>
+			<button class="btn btn-lg btn-default" onclick="openURL()">Try it</button>
+                    </div>
+                </div>
+		{% endif %}
             </div>
         </form>
     </section>
-
-	<!-- links to other pages for each feature -->
+<!-- links to other pages for each feature -->
     <section class="no-padding" id="name">
 		<br>
         <div class="container-fluid">
@@ -239,4 +249,12 @@
 		</div>
 	</section>
 
+<script>
+	function openURL() {
+		var URL;
+		URL = document.getElementById('url_content').textContent;
+		alert(URL);
+		window.open(URL);
+	}
+</script>
     {% endblock %}

@@ -1,0 +1,2316 @@
+Error: That port is already in use.
+[17/May/2017 19:33:35] "GET / HTTP/1.1" 200 7437
+[17/May/2017 19:33:39] "GET / HTTP/1.1" 200 7437
+[17/May/2017 19:33:42] "POST / HTTP/1.1" 200 7666
+[17/May/2017 19:33:54] "POST / HTTP/1.1" 200 7811
+[17/May/2017 19:33:57] "POST / HTTP/1.1" 200 7437
+[17/May/2017 19:35:27] "POST / HTTP/1.1" 200 7811
+[17/May/2017 19:37:04] "GET / HTTP/1.1" 200 7439
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/demo/arrived/web/arrived/mysite/webpages/views.py", line 57, in index
+    s.connect((host, int(port)))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[17/May/2017 19:37:06] "POST / HTTP/1.1" 500 73695
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/demo/arrived/web/arrived/mysite/webpages/views.py", line 57, in index
+    s.connect((host, int(port)))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[17/May/2017 19:37:41] "POST / HTTP/1.1" 500 73670
+[17/May/2017 19:37:48] "GET / HTTP/1.1" 200 7437
+[17/May/2017 19:37:51] "GET /learn/ HTTP/1.1" 200 108979
+[17/May/2017 19:37:51] "GET /static/img/header.jpg HTTP/1.1" 304 0
+[17/May/2017 19:37:55] "GET /see/ HTTP/1.1" 200 1517357
+[17/May/2017 19:40:06] "GET / HTTP/1.1" 200 7439
+[17/May/2017 19:40:11] "POST / HTTP/1.1" 200 7668
+[17/May/2017 19:40:59] "POST / HTTP/1.1" 200 7670
+[17/May/2017 19:43:19] "GET / HTTP/1.1" 200 7421
+[17/May/2017 19:43:20] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[17/May/2017 19:43:20] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[17/May/2017 19:43:20] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[17/May/2017 19:43:20] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[17/May/2017 19:43:20] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[17/May/2017 19:43:20] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[17/May/2017 19:43:21] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[17/May/2017 19:43:21] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[17/May/2017 19:43:21] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[17/May/2017 19:43:40] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[17/May/2017 19:43:45] "POST / HTTP/1.1" 200 7650
+[17/May/2017 19:43:55] "POST / HTTP/1.1" 200 7652
+[17/May/2017 19:44:36] "POST / HTTP/1.1" 200 7652
+[17/May/2017 19:45:16] "POST / HTTP/1.1" 200 7652
+[17/May/2017 19:45:27] "POST / HTTP/1.1" 200 7652
+[17/May/2017 19:48:30] "POST / HTTP/1.1" 200 7652
+[17/May/2017 19:48:39] "POST / HTTP/1.1" 200 7678
+[17/May/2017 19:48:50] "POST / HTTP/1.1" 200 7652
+[17/May/2017 19:50:14] "POST / HTTP/1.1" 200 7646
+[17/May/2017 19:53:51] "POST / HTTP/1.1" 200 7668
+[17/May/2017 19:53:51] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[17/May/2017 19:53:51] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[17/May/2017 19:53:51] "GET /static/css/creative.min.css HTTP/1.1" 304 0
+[17/May/2017 19:53:51] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+[17/May/2017 19:53:51] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[17/May/2017 19:53:51] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[17/May/2017 19:53:51] "GET /static/img/jarvis.jpg HTTP/1.1" 304 0
+[17/May/2017 19:53:51] "GET /static/img/icon_2.jpg HTTP/1.1" 304 0
+[17/May/2017 19:53:52] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[17/May/2017 20:06:23] "GET / HTTP/1.1" 200 7437
+[17/May/2017 20:06:23] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[17/May/2017 20:06:23] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[17/May/2017 20:06:23] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[17/May/2017 20:06:23] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[17/May/2017 20:06:23] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[17/May/2017 20:06:23] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[17/May/2017 20:06:24] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[17/May/2017 20:06:24] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[17/May/2017 20:06:24] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[17/May/2017 20:06:24] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[17/May/2017 20:06:49] "GET /index/ HTTP/1.1" 200 7437
+[17/May/2017 20:06:51] "GET /learn/ HTTP/1.1" 200 108979
+[17/May/2017 20:06:52] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[17/May/2017 20:06:55] "GET /see/ HTTP/1.1" 200 1517357
+[17/May/2017 20:07:03] "GET /watch/ HTTP/1.1" 200 6104
+[17/May/2017 20:07:05] "GET /contact/ HTTP/1.1" 200 7112
+[17/May/2017 20:07:13] "GET /index/ HTTP/1.1" 200 7437
+[17/May/2017 20:07:15] "GET /learn/ HTTP/1.1" 200 108979
+[17/May/2017 20:08:00] "GET /index/ HTTP/1.1" 200 7437
+[17/May/2017 20:08:03] "POST /index/ HTTP/1.1" 200 7668
+[17/May/2017 20:08:06] "POST /index/ HTTP/1.1" 200 7668
+[17/May/2017 20:08:13] "POST /index/ HTTP/1.1" 200 7668
+[17/May/2017 20:16:41] "GET / HTTP/1.1" 200 13882
+[17/May/2017 20:16:41] "GET /static/img/box/train.jpg HTTP/1.1" 304 0
+[17/May/2017 20:16:41] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+Internal Server Error: /index/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/demo/arrived/web/arrived/mysite/webpages/views.py", line 57, in index
+    s.connect((host, int(port)))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[17/May/2017 20:35:16] "POST /index/ HTTP/1.1" 500 73786
+Not Found: /favicon.ico
+[17/May/2017 20:35:16] "GET /favicon.ico HTTP/1.1" 404 3253
+[17/May/2017 20:35:19] "GET / HTTP/1.1" 200 13882
+[17/May/2017 20:35:19] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[17/May/2017 20:35:19] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[17/May/2017 22:45:50] "GET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[17/May/2017 23:21:26] "GET / HTTP/1.1" 200 13884
+[17/May/2017 23:21:27] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[18/May/2017 00:58:09] "GET / HTTP/1.1" 200 13882
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/demo/arrived/web/arrived/mysite/webpages/views.py", line 57, in index
+    s.connect((host, int(port)))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+[18/May/2017 00:58:12] "POST / HTTP/1.1" 500 73686
+[18/May/2017 00:59:00] "POST / HTTP/1.1" 200 13882
+[18/May/2017 00:59:05] "POST / HTTP/1.1" 200 14111
+[18/May/2017 15:45:54] "GET / HTTP/1.1" 200 13882
+[18/May/2017 15:45:54] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/css/creative.min.css HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/img/jarvis.jpg HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/img/box/train.jpg HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/img/icon_2.jpg HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[18/May/2017 15:45:54] "GET /static/img/cas/dream.jpeg HTTP/1.1" 304 0
+[18/May/2017 15:45:56] "POST / HTTP/1.1" 200 13882
+[18/May/2017 15:45:59] "POST / HTTP/1.1" 200 14111
+[18/May/2017 15:46:03] "POST / HTTP/1.1" 200 14111
+[18/May/2017 15:46:07] "POST / HTTP/1.1" 200 14113
+[18/May/2017 15:46:16] "GET /learn/ HTTP/1.1" 200 108979
+[18/May/2017 15:46:16] "GET /static/img/header.jpg HTTP/1.1" 304 0
+[18/May/2017 17:45:18] "GET / HTTP/1.1" 200 13882
+[18/May/2017 17:45:22] "POST / HTTP/1.1" 200 14111
+[18/May/2017 18:15:13] "GET / HTTP/1.1" 200 13882
+[18/May/2017 18:15:33] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[18/May/2017 18:15:36] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[18/May/2017 18:15:37] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[18/May/2017 18:15:57] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[18/May/2017 18:16:32] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[18/May/2017 18:16:57] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[18/May/2017 18:17:32] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[18/May/2017 18:17:45] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[18/May/2017 18:17:45] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[18/May/2017 18:17:45] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[18/May/2017 18:17:54] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[18/May/2017 18:18:04] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[18/May/2017 18:20:24] "GET /learn/ HTTP/1.1" 200 108979
+[18/May/2017 18:21:11] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[19/May/2017 20:07:18] "GET / HTTP/1.1" 200 13884
+[19/May/2017 20:07:18] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[20/May/2017 04:32:45] "GET / HTTP/1.1" 200 13882
+[20/May/2017 04:32:45] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/css/creative.min.css HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/img/jarvis.jpg HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/img/box/train.jpg HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/img/icon_2.jpg HTTP/1.1" 304 0
+[20/May/2017 04:32:45] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[20/May/2017 04:32:49] "POST / HTTP/1.1" 200 14111
+[20/May/2017 04:54:54] "GET / HTTP/1.1" 200 13876
+[20/May/2017 11:24:39] code 400, message Bad request syntax ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x03~.\x87c\xe9\x16Z\xef=\xb3*\x8d\xbdQ\x17\x8cv\xa9T4>\xc2\xc4\xf1D\x19\x03\x8a\xa4\xbf\xe9\xd1\x00\x006\xc0,\xc0')
+[20/May/2017 11:24:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[21/May/2017 20:02:23] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[21/May/2017 20:38:53] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[21/May/2017 20:38:53] "    c                           " 400 -
+[21/May/2017 21:06:01] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[23/May/2017 02:29:54] "GET / HTTP/1.1" 200 13884
+[23/May/2017 02:29:54] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[23/May/2017 03:07:56] "GET / HTTP/1.1" 200 13882
+[23/May/2017 03:07:56] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[23/May/2017 03:07:56] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[23/May/2017 03:07:56] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[23/May/2017 03:07:56] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[23/May/2017 03:07:56] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[23/May/2017 03:07:56] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[23/May/2017 03:07:56] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[23/May/2017 03:07:56] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[23/May/2017 03:07:56] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[23/May/2017 03:07:56] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[23/May/2017 03:07:56] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[23/May/2017 03:07:57] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[23/May/2017 03:07:59] "POST / HTTP/1.1" 200 14111
+[23/May/2017 03:08:01] "GET /learn/ HTTP/1.1" 200 108979
+[23/May/2017 03:08:02] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[23/May/2017 03:08:04] "GET /index/ HTTP/1.1" 200 13882
+[23/May/2017 08:06:09] "GET / HTTP/1.1" 200 13876
+[23/May/2017 17:49:00] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[23/May/2017 18:53:03] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[24/May/2017 04:55:25] "GET / HTTP/1.1" 200 13884
+[24/May/2017 04:55:25] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[25/May/2017 05:14:51] "GET / HTTP/1.1" 200 13884
+[25/May/2017 05:14:51] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[25/May/2017 20:10:28] "GET / HTTP/1.1" 200 13882
+[25/May/2017 20:10:28] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[25/May/2017 20:10:28] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[25/May/2017 20:10:28] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[25/May/2017 20:10:28] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[25/May/2017 20:10:28] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[25/May/2017 20:10:28] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[25/May/2017 20:10:29] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[25/May/2017 20:10:29] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[25/May/2017 20:10:29] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[25/May/2017 20:10:29] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[25/May/2017 20:10:29] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[25/May/2017 20:10:49] "GET / HTTP/1.1" 200 13882
+[25/May/2017 20:10:50] "GET /watch/ HTTP/1.1" 200 6104
+[25/May/2017 20:10:51] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[25/May/2017 20:10:52] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[25/May/2017 20:10:52] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[25/May/2017 20:10:52] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[25/May/2017 20:10:52] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[25/May/2017 20:10:52] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[25/May/2017 20:10:52] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[25/May/2017 20:10:53] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[25/May/2017 20:10:53] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[25/May/2017 20:10:53] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[25/May/2017 20:10:53] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[25/May/2017 20:10:53] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[25/May/2017 20:10:58] "GET /static/favicon.ico HTTP/1.1" 200 1406
+Not Found: /recordings/index.php
+[25/May/2017 21:37:53] "GET /recordings/index.php HTTP/1.1" 404 3280
+[26/May/2017 17:40:01] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[26/May/2017 17:40:01] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[26/May/2017 18:40:12] "GET / HTTP/1.1" 200 13885
+[26/May/2017 18:40:12] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[26/May/2017 21:43:06] "GET / HTTP/1.1" 200 13876
+[26/May/2017 21:49:45] "GET / HTTP/1.1" 200 13882
+[26/May/2017 21:49:45] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[26/May/2017 21:49:45] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[26/May/2017 21:49:45] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[26/May/2017 21:49:45] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[26/May/2017 21:49:45] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[26/May/2017 21:49:45] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[26/May/2017 21:49:45] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[26/May/2017 21:49:45] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[26/May/2017 21:49:45] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[26/May/2017 21:49:46] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[26/May/2017 21:49:46] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[27/May/2017 00:51:49] code 400, message Bad request syntax ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x03\x0e\xaf\xd8\x00T\x8d\xc4\x83\xe1W\xbf\xcfLC\xee\xf5&\xe6m\x1aJka\xff\xdd\x8c\xe7-\xae\x95\xa3\xe8\x00\x006\xc0,\xc0')
+[27/May/2017 00:51:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[27/May/2017 14:54:28] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03U\xdd\x9c\x0e\xe1=\x8b\xca')
+[27/May/2017 14:54:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[29/May/2017 10:35:27] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[29/May/2017 10:35:27] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[29/May/2017 15:07:15] "GET / HTTP/1.0" 400 60830
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[29/May/2017 15:07:15] "GET / HTTP/1.0" 500 59
+[2017-05-29 15:07:15,909] - Broken pipe from ('106.75.33.183', 60128)
+
+[29/May/2017 15:35:17] "GET / HTTP/1.1" 200 13876
+[29/May/2017 19:58:16] code 400, message Bad request syntax ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x035\xcc\x9a%J\xc6l\x8b\xed{\x88\xfa\xf8\xb3\xc1\x9d;6\xfc\xfb\xb4cNI]n\xb9\xe7\x7f\xd6X.\x00\x006\xc0,\xc0')
+[29/May/2017 19:58:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[30/May/2017 00:41:08] "GET / HTTP/1.1" 200 13884
+[30/May/2017 00:41:08] "GET /static/favicon.ico HTTP/1.1" 200 1406
+Not Found: /recordings/
+[30/May/2017 08:53:39] "GET /recordings/ HTTP/1.1" 404 3253
+[30/May/2017 08:53:39] "GET / HTTP/1.1" 200 13866
+[30/May/2017 08:53:39] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x03\xa2Rw')
+[30/May/2017 08:53:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[31/May/2017 17:53:55] "GET / HTTP/1.1" 200 13885
+[31/May/2017 17:53:56] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[01/Jun/2017 00:05:15] "GET / HTTP/1.1" 200 13876
+[01/Jun/2017 13:01:07] "GET / HTTP/1.1" 200 13876
+[02/Jun/2017 12:55:19] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03\x1f;\xe5Fs\xa7\x8cV\x1d\xa6\xbc>\x9e')
+[02/Jun/2017 12:55:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[02/Jun/2017 19:10:57] "GET / HTTP/1.1" 200 13884
+[03/Jun/2017 14:27:48] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[03/Jun/2017 14:27:49] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[04/Jun/2017 02:34:41] "GET / HTTP/1.0" 400 60703
+[04/Jun/2017 16:15:33] code 400, message Bad request version ("Xa\xafKs4'64V\x00\x00p\xc00\xc0,\xc02\xc0.\xc0/\xc0+\xc01\xc0-\x00\xa3\x00\x9f\x00\xa2\x00\x9e\xc0(\xc0$\xc0\x14\xc0")
+[04/Jun/2017 16:15:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[05/Jun/2017 02:45:39] "GET / HTTP/1.1" 200 13880
+[05/Jun/2017 07:52:30] "GET / HTTP/1.1" 200 13876
+[06/Jun/2017 10:06:04] "GET / HTTP/1.1" 200 13876
+[06/Jun/2017 19:56:35] "GET / HTTP/1.1" 200 13885
+[06/Jun/2017 19:56:35] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[07/Jun/2017 20:09:50] "GET / HTTP/1.1" 200 13885
+[07/Jun/2017 20:09:50] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[07/Jun/2017 20:10:16] "GET / HTTP/1.1" 200 13885
+[07/Jun/2017 20:10:16] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[07/Jun/2017 20:10:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[07/Jun/2017 20:10:16] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[07/Jun/2017 20:10:16] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[07/Jun/2017 20:10:16] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[07/Jun/2017 20:10:16] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[07/Jun/2017 20:10:16] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[07/Jun/2017 20:10:16] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[07/Jun/2017 20:10:16] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[07/Jun/2017 20:10:16] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[07/Jun/2017 20:10:16] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[07/Jun/2017 20:10:16] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[07/Jun/2017 20:10:19] "POST / HTTP/1.1" 200 14114
+[07/Jun/2017 20:10:24] "POST / HTTP/1.1" 200 14116
+[07/Jun/2017 20:10:27] "POST / HTTP/1.1" 200 14136
+Not Found: /recordings/
+[08/Jun/2017 19:15:39] "GET /recordings/ HTTP/1.1" 404 3253
+[08/Jun/2017 19:15:39] "GET / HTTP/1.1" 200 13866
+[08/Jun/2017 19:15:41] code 400, message Bad request version ('g{\x8e\x8eH\xfe\x91ee7U\x85\xb5%\xcf\xdc\x00\x006\xc0,\xc0')
+[08/Jun/2017 19:15:41] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[09/Jun/2017 20:52:35] "GET / HTTP/1.1" 200 13884
+[09/Jun/2017 20:52:35] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[09/Jun/2017 22:01:46] "GET / HTTP/1.1" 200 13876
+[10/Jun/2017 16:21:40] "GET / HTTP/1.1" 200 13866
+[11/Jun/2017 01:51:56] "GET / HTTP/1.1" 200 13884
+[11/Jun/2017 01:51:56] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[11/Jun/2017 04:12:32] "GET / HTTP/1.1" 200 13866
+[11/Jun/2017 04:12:32] "GET / HTTP/1.1" 200 13866
+[11/Jun/2017 04:12:32] "GET / HTTP/1.1" 200 13866
+[11/Jun/2017 21:27:32] "GET / HTTP/1.1" 200 13876
+[12/Jun/2017 01:59:17] "GET / HTTP/1.1" 200 13884
+[12/Jun/2017 01:59:17] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[14/Jun/2017 03:58:17] "GET / HTTP/1.1" 200 13884
+[14/Jun/2017 03:58:17] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[14/Jun/2017 06:19:17] "GET / HTTP/1.1" 200 13876
+Not Found: /manager/html
+[15/Jun/2017 05:36:50] "GET /manager/html HTTP/1.1" 404 3256
+[15/Jun/2017 18:34:34] "GET / HTTP/1.1" 200 13887
+[15/Jun/2017 18:34:34] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[16/Jun/2017 19:22:12] "GET / HTTP/1.1" 200 13866
+[17/Jun/2017 17:31:08] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[17/Jun/2017 17:31:08] "    c                           " 400 -
+[18/Jun/2017 01:26:32] "GET / HTTP/1.1" 200 13876
+[18/Jun/2017 03:03:54] "GET / HTTP/1.1" 200 13881
+[18/Jun/2017 03:03:54] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[18/Jun/2017 08:15:32] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[18/Jun/2017 10:33:42] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[18/Jun/2017 12:53:02] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[18/Jun/2017 21:15:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Jun/2017 00:02:59] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Jun/2017 02:48:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Jun/2017 09:22:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Jun/2017 09:22:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Not Found: /recordings/
+[19/Jun/2017 10:32:02] "GET /recordings/ HTTP/1.1" 404 3253
+Not Found: /assets/jnkp.php
+[19/Jun/2017 10:32:02] "GET /assets/jnkp.php HTTP/1.1" 404 3265
+[19/Jun/2017 10:32:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\x96\x01\x00\x00\x92\x03\x03c\xfc?S\xbfC\x05\x82\\\xe2\xfe\x8a\xe9\x00h#\xde"\xb4a\xec\xb9\xbd')
+[19/Jun/2017 10:32:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[19/Jun/2017 14:46:50] "GET / HTTP/1.1" 200 13881
+[19/Jun/2017 14:46:50] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[20/Jun/2017 04:57:14] code 400, message Bad request syntax ('\x16\x03\x01\x00\xd8\x01\x00\x00\xd4\x03\x03YH\xab*\xd7\xd4\x05b\x9eb\xa0{\xd3a\xa8\x91\xb5\x16\xeaxV\x82%\xbe\xceV\xdcA\xb2@P\xe4\x00\x00V\xc00\xc0,\xc02\xc0.\xc0/\xc0+\xc01\xc0-\x00\xa3\x00\x9f\x00\xa2\x00\x9e\xc0(\xc0$\xc0\x14\xc0')
+[20/Jun/2017 04:57:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[21/Jun/2017 09:36:44] "GET / HTTP/1.1" 200 13876
+[22/Jun/2017 16:24:53] "GET / HTTP/1.1" 200 13884
+[22/Jun/2017 16:24:53] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[23/Jun/2017 06:35:23] "GET / HTTP/1.1" 200 13882
+[23/Jun/2017 06:35:23] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[23/Jun/2017 06:35:23] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[23/Jun/2017 06:35:23] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[23/Jun/2017 06:35:23] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[23/Jun/2017 06:35:23] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[23/Jun/2017 06:35:23] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[23/Jun/2017 06:35:23] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[23/Jun/2017 06:35:23] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[23/Jun/2017 06:35:23] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[23/Jun/2017 06:35:23] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[23/Jun/2017 06:35:23] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[23/Jun/2017 06:35:23] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[23/Jun/2017 06:35:26] "GET /learn/ HTTP/1.1" 200 108979
+[23/Jun/2017 06:35:27] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[23/Jun/2017 06:35:29] "GET /see/ HTTP/1.1" 200 1517357
+[23/Jun/2017 20:29:26] "GET / HTTP/1.1" 200 13876
+[23/Jun/2017 21:25:32] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03\x91\xa3\xf5:\x1b\xa8\x8f\x80\xbb\xaa\xeeI;\x99\xd1i0\xc1\xcd\xd7\x1fC\x19\x14m\xd8\x867$\xdcJ\x9e\x00\x00p\xc00\xc0,\xc02\xc0.\xc0/\xc0+\xc01\xc0-\x00\xa3\x00\x9f\x00\xa2\x00\x9e\xc0(\xc0$\xc0\x14\xc0')
+[23/Jun/2017 21:25:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[23/Jun/2017 23:15:26] "GET / HTTP/1.1" 200 13884
+[23/Jun/2017 23:15:27] "GET /static/favicon.ico HTTP/1.1" 200 1406
+Not Found: /recordings/
+[24/Jun/2017 02:46:12] "GET /recordings/ HTTP/1.1" 404 3253
+[24/Jun/2017 02:46:14] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\x96\x01\x00\x00\x92\x03\x03\xc9l~H\xfe7,Mr\x91T.\xc58\x82\xba')
+[24/Jun/2017 02:46:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[24/Jun/2017 11:56:29] "POST / HTTP/1.0" 400 61201
+[24/Jun/2017 16:03:38] "GET / HTTP/1.1" 200 13880
+[25/Jun/2017 07:38:08] "GET / HTTP/1.1" 200 13876
+[27/Jun/2017 11:28:47] "GET / HTTP/1.1" 200 13876
+[28/Jun/2017 14:36:27] code 400, message Bad request version ('!\xb9\xae\xf1\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+[28/Jun/2017 14:36:27] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 596, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 331, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 652, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 140, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+[28/Jun/2017 14:36:32] "GET / HTTP/1.1" 200 13866
+[28/Jun/2017 14:36:32] "GET / HTTP/1.1" 200 13866
+[28/Jun/2017 19:17:28] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00\x89\x01\x00\x00\x85\x03\x03\x8a\x01;\xd3\xdb\x9c\x9c\x9e&\x8f\xf7b?\x8f~\xbdF\xd3\xae\xc4C\xd5\xa5=\xd7\\\x05\xba\xe2t\xe8\xec\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+[28/Jun/2017 19:17:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[28/Jun/2017 19:17:29] "GET / HTTP/1.1" 200 13880
+[29/Jun/2017 05:16:35] "GET / HTTP/1.1" 200 13882
+[29/Jun/2017 05:16:35] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[29/Jun/2017 05:16:35] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[29/Jun/2017 05:16:35] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[29/Jun/2017 05:16:35] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[29/Jun/2017 05:16:35] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[29/Jun/2017 05:16:35] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[29/Jun/2017 05:16:35] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[29/Jun/2017 05:16:35] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[29/Jun/2017 05:16:35] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[29/Jun/2017 05:16:35] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[29/Jun/2017 05:16:35] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[29/Jun/2017 05:52:18] "GET / HTTP/1.1" 200 13882
+[29/Jun/2017 05:52:18] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[29/Jun/2017 05:52:18] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[29/Jun/2017 05:52:18] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[29/Jun/2017 05:52:18] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[29/Jun/2017 05:52:18] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[29/Jun/2017 05:52:18] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[29/Jun/2017 05:52:18] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[29/Jun/2017 05:52:18] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[29/Jun/2017 05:52:18] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[29/Jun/2017 19:00:25] "GET / HTTP/1.1" 200 13882
+[29/Jun/2017 19:00:35] "GET /see/ HTTP/1.1" 200 1517357
+[29/Jun/2017 19:00:36] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[29/Jun/2017 19:00:47] "GET /see/ HTTP/1.1" 200 1517357
+[29/Jun/2017 19:00:50] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[29/Jun/2017 19:00:59] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[29/Jun/2017 19:00:59] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[29/Jun/2017 19:00:59] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[29/Jun/2017 19:00:59] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[29/Jun/2017 19:00:59] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[29/Jun/2017 19:00:59] "GET /see/ HTTP/1.1" 200 1517357
+[29/Jun/2017 19:00:59] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[29/Jun/2017 19:01:01] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[29/Jun/2017 19:01:01] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[29/Jun/2017 19:01:01] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[29/Jun/2017 19:01:02] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[30/Jun/2017 01:45:34] "GET /see/ HTTP/1.1" 200 1517357
+[2017-06-30 01:45:34,090] - Broken pipe from ('129.236.227.141', 63246)
+
+[30/Jun/2017 04:40:19] "GET / HTTP/1.1" 200 13876
+[01/Jul/2017 16:20:44] "GET / HTTP/1.1" 200 13876
+[01/Jul/2017 19:56:03] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[02/Jul/2017 22:31:39] "GET / HTTP/1.0" 400 60705
+[03/Jul/2017 14:56:25] "GET / HTTP/1.1" 200 13876
+[03/Jul/2017 17:49:41] code 400, message Bad request syntax ('\x804\x01\x03\x01\x00\x1b\x00\x00\x00\x10\x00\x009\x00\x008\x00\x003\x00\x002\x00\x00\x16\x00\x00\x13\x00\x005\x00\x00/\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 1: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[03/Jul/2017 18:41:47] "GET / HTTP/1.1" 200 13882
+[03/Jul/2017 18:41:47] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[03/Jul/2017 18:41:47] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[03/Jul/2017 18:41:47] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[03/Jul/2017 18:41:47] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[03/Jul/2017 18:41:47] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[03/Jul/2017 18:41:47] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[03/Jul/2017 18:41:47] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[03/Jul/2017 18:41:47] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[03/Jul/2017 18:41:47] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[03/Jul/2017 18:41:47] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[03/Jul/2017 18:41:47] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[03/Jul/2017 18:41:48] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[03/Jul/2017 18:41:53] "POST / HTTP/1.1" 200 14111
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[04/Jul/2017 05:54:32] "GET / HTTP/1.0" 400 60704
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[04/Jul/2017 06:14:12] "GET / HTTP/1.0" 400 60701
+[04/Jul/2017 06:14:14] "GET / HTTP/1.1" 200 13883
+[04/Jul/2017 06:14:15] "GET /static/favicon.ico HTTP/1.1" 200 1406
+Not Found: /stats
+[04/Jul/2017 06:14:16] "GET /stats HTTP/1.1" 404 3230
+[05/Jul/2017 02:41:34] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[05/Jul/2017 02:41:34] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[05/Jul/2017 18:13:10] "GET / HTTP/1.1" 200 13885
+[05/Jul/2017 18:13:10] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[06/Jul/2017 18:46:48] "GET / HTTP/1.1" 200 13885
+[06/Jul/2017 18:46:48] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[08/Jul/2017 01:15:05] "GET / HTTP/1.1" 200 13876
+[08/Jul/2017 01:38:49] "GET / HTTP/1.1" 200 13866
+[10/Jul/2017 01:37:18] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[10/Jul/2017 01:37:22] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[10/Jul/2017 03:17:03] "GET / HTTP/1.0" 400 60704
+[10/Jul/2017 04:02:14] "GET / HTTP/1.1" 200 13876
+[10/Jul/2017 11:16:54] "GET / HTTP/1.1" 200 13885
+[10/Jul/2017 17:39:12] "GET / HTTP/1.1" 200 13882
+[10/Jul/2017 17:39:12] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[10/Jul/2017 17:39:12] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[10/Jul/2017 17:39:12] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[10/Jul/2017 17:39:12] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[10/Jul/2017 17:39:12] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[10/Jul/2017 17:39:12] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[10/Jul/2017 17:39:12] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[10/Jul/2017 17:39:12] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[10/Jul/2017 17:39:12] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[10/Jul/2017 17:39:12] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[10/Jul/2017 17:39:12] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[10/Jul/2017 17:39:17] "GET /learn/ HTTP/1.1" 200 108979
+[10/Jul/2017 17:39:17] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[10/Jul/2017 17:39:51] "GET /watch/ HTTP/1.1" 200 6104
+[10/Jul/2017 17:39:55] "GET /contact/ HTTP/1.1" 200 7112
+[10/Jul/2017 17:40:04] "GET /see/ HTTP/1.1" 200 1517357
+[10/Jul/2017 17:55:12] "GET /index/ HTTP/1.1" 200 13882
+[10/Jul/2017 17:57:13] "GET /learn/ HTTP/1.1" 200 108979
+[10/Jul/2017 17:57:24] "GET /watch/ HTTP/1.1" 200 6104
+[10/Jul/2017 17:57:25] "GET /contact/ HTTP/1.1" 200 7112
+[10/Jul/2017 18:48:37] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[10/Jul/2017 18:48:38] "GET /index/ HTTP/1.1" 200 13882
+[10/Jul/2017 18:48:39] "GET /index/ HTTP/1.1" 200 13882
+[10/Jul/2017 18:48:42] "GET / HTTP/1.1" 200 13882
+[10/Jul/2017 18:55:06] "GET / HTTP/1.1" 200 13885
+[10/Jul/2017 18:55:06] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[11/Jul/2017 15:09:11] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[11/Jul/2017 21:16:20] "GET / HTTP/1.1" 200 13885
+[11/Jul/2017 21:16:20] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[12/Jul/2017 10:32:18] "GET / HTTP/1.1" 200 13876
+[12/Jul/2017 12:07:06] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[12/Jul/2017 12:07:07] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[13/Jul/2017 06:06:43] "GET / HTTP/1.1" 200 13882
+[13/Jul/2017 06:06:43] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[13/Jul/2017 06:06:43] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[13/Jul/2017 06:06:43] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[13/Jul/2017 06:06:43] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[13/Jul/2017 06:06:43] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[13/Jul/2017 06:06:43] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[13/Jul/2017 06:06:44] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[13/Jul/2017 06:06:44] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[13/Jul/2017 06:06:44] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[13/Jul/2017 06:06:44] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[13/Jul/2017 06:06:44] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[13/Jul/2017 06:06:50] "GET /contact/ HTTP/1.1" 200 7112
+[13/Jul/2017 06:06:51] "GET /static/img/header.jpg HTTP/1.1" 200 992104
+[13/Jul/2017 17:56:15] "GET / HTTP/1.1" 200 13885
+[13/Jul/2017 17:56:15] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[13/Jul/2017 22:02:19] "GET / HTTP/1.1" 200 13876
+[15/Jul/2017 07:24:53] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[15/Jul/2017 07:25:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[17/Jul/2017 13:16:17] "GET / HTTP/1.1" 200 13876
+[17/Jul/2017 16:43:35] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'\xe0\x00\x00\x00\x00\x00Cookie:")
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[17/Jul/2017 17:33:40] "GET / HTTP/1.1" 200 13885
+[17/Jul/2017 18:40:24] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[17/Jul/2017 18:40:24] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[18/Jul/2017 06:40:06] "GET / HTTP/1.1" 200 13866
+[18/Jul/2017 12:37:01] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[18/Jul/2017 12:37:01] "    c                           " 400 -
+[18/Jul/2017 12:37:29] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[18/Jul/2017 12:37:29] "    c                           " 400 -
+[19/Jul/2017 06:18:46] "GET / HTTP/1.1" 200 13876
+[20/Jul/2017 02:42:48] "GET / HTTP/1.1" 200 13884
+[20/Jul/2017 02:42:48] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[21/Jul/2017 04:14:37] "GET / HTTP/1.1" 200 13885
+[21/Jul/2017 15:32:37] "GET / HTTP/1.1" 200 13876
+Not Found: /manager/html
+[21/Jul/2017 16:59:41] "GET /manager/html HTTP/1.1" 404 3256
+[23/Jul/2017 15:35:59] "GET / HTTP/1.1" 200 13883
+[23/Jul/2017 15:36:00] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[24/Jul/2017 06:35:57] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[24/Jul/2017 10:29:05] "GET / HTTP/1.0" 400 60706
+[24/Jul/2017 18:25:05] "GET / HTTP/1.1" 200 13885
+[24/Jul/2017 18:25:05] "GET /static/favicon.ico HTTP/1.1" 200 1406
+Not Found: /cgi-bin/nobody/Machine.cgi
+[25/Jul/2017 17:35:56] "GET /cgi-bin/nobody/Machine.cgi?action=get_capability HTTP/1.1" 404 3315
+[25/Jul/2017 20:30:09] "GET / HTTP/1.1" 200 13883
+[25/Jul/2017 20:30:09] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[26/Jul/2017 21:09:33] "GET / HTTP/1.1" 200 13885
+[26/Jul/2017 21:09:33] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[27/Jul/2017 01:18:00] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[27/Jul/2017 02:33:21] "GET / HTTP/1.0" 400 61008
+Not Found: /cgi-bin/nobody/Machine.cgi
+[27/Jul/2017 16:12:14] "GET /cgi-bin/nobody/Machine.cgi?action=get_capability HTTP/1.1" 404 3315
+[29/Jul/2017 09:23:42] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Not Found: /manager/html
+[29/Jul/2017 12:39:10] "GET /manager/html HTTP/1.1" 404 3256
+[29/Jul/2017 22:58:01] "GET / HTTP/1.1" 200 13876
+Not Found: /recordings/
+[30/Jul/2017 06:06:13] "GET /recordings/ HTTP/1.1" 404 3253
+[30/Jul/2017 16:15:45] "GET / HTTP/1.1" 200 13885
+[31/Jul/2017 11:36:34] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03\x0f\xd1\x06V#\x1a\xc1^m\xdf\xf8')
+[31/Jul/2017 11:36:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[31/Jul/2017 11:37:07] "GET / HTTP/1.1" 200 13883
+[01/Aug/2017 04:43:47] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[01/Aug/2017 18:23:41] "GET / HTTP/1.0" 400 60705
+[01/Aug/2017 21:57:21] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[02/Aug/2017 11:40:13] "GET / HTTP/1.0" 400 60703
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[03/Aug/2017 05:28:45] "POST / HTTP/1.0" 400 61200
+[04/Aug/2017 15:49:18] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[04/Aug/2017 15:58:54] "GET / HTTP/1.0" 400 60705
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[04/Aug/2017 15:58:54] "GET / HTTP/1.0" 500 59
+[2017-08-04 15:58:54,832] - Broken pipe from ('187.154.228.228', 56376)
+
+Not Found: /a2billing/customer/index.php
+[06/Aug/2017 07:04:15] "GET /a2billing/customer/index.php HTTP/1.1" 404 3304
+[06/Aug/2017 22:39:15] "GET / HTTP/1.1" 200 13876
+[08/Aug/2017 13:59:49] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[08/Aug/2017 13:59:54] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[08/Aug/2017 14:58:18] "GET / HTTP/1.1" 200 13885
+[08/Aug/2017 14:58:19] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[08/Aug/2017 22:15:58] "GET / HTTP/1.1" 200 13876
+[10/Aug/2017 12:19:20] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[10/Aug/2017 12:19:20] "    c                           " 400 -
+[10/Aug/2017 22:14:06] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[10/Aug/2017 22:14:06] "    c                           " 400 -
+[11/Aug/2017 09:35:59] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[11/Aug/2017 09:35:59] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[11/Aug/2017 12:14:54] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[11/Aug/2017 13:36:57] "GET / HTTP/1.1" 200 13876
+[12/Aug/2017 04:59:58] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[12/Aug/2017 05:21:23] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[13/Aug/2017 06:25:26] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[13/Aug/2017 06:56:14] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[13/Aug/2017 13:35:55] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[13/Aug/2017 14:16:19] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[13/Aug/2017 15:52:22] "GET / HTTP/1.1" 200 13885
+[13/Aug/2017 17:53:41] "GET / HTTP/1.1" 200 13876
+[14/Aug/2017 05:28:50] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[14/Aug/2017 05:57:36] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[15/Aug/2017 05:48:31] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[15/Aug/2017 06:20:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[16/Aug/2017 23:08:14] code 400, message Bad request syntax ('\x16\x03\x01\x00\x89\x01\x00\x00\x85\x03\x03\xae\xef\x84&\xff\xf0\xf2+\xfa\xb6\xacb\x1e\x00kz\xc27r\xe9\xe8:\xad\x1b^R\xd0')
+[16/Aug/2017 23:08:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[16/Aug/2017 23:08:15] "GET / HTTP/1.1" 200 13880
+[17/Aug/2017 06:13:33] "GET / HTTP/1.1" 200 13876
+[18/Aug/2017 23:49:10] "GET / HTTP/1.1" 200 13866
+[19/Aug/2017 01:34:42] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[19/Aug/2017 17:56:08] "GET / HTTP/1.0" 400 60702
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[19/Aug/2017 21:29:09] "GET / HTTP/1.0" 400 60704
+[19/Aug/2017 22:47:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Aug/2017 22:47:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[22/Aug/2017 00:34:53] "GET / HTTP/1.1" 200 13876
+[22/Aug/2017 06:26:19] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[22/Aug/2017 07:12:13] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[23/Aug/2017 13:48:39] "GET / HTTP/1.1" 200 13876
+[24/Aug/2017 21:02:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[24/Aug/2017 21:02:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[25/Aug/2017 01:43:51] "GET / HTTP/1.0" 400 60702
+[25/Aug/2017 06:04:34] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[25/Aug/2017 06:39:15] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[25/Aug/2017 13:01:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[25/Aug/2017 13:01:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[26/Aug/2017 06:13:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[26/Aug/2017 06:16:09] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[26/Aug/2017 09:04:36] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[27/Aug/2017 04:51:20] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[27/Aug/2017 17:02:56] "GET / HTTP/1.0" 400 60704
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[27/Aug/2017 17:02:56] "GET / HTTP/1.0" 500 59
+[2017-08-27 17:02:56,208] - Broken pipe from ('171.96.98.230', 3906)
+
+[28/Aug/2017 06:44:32] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[28/Aug/2017 06:44:32] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[28/Aug/2017 14:32:53] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[29/Aug/2017 06:13:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[29/Aug/2017 06:47:31] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[29/Aug/2017 09:53:53] "GET / HTTP/1.1" 200 13876
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 01:41:10] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 01:41:10] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 01:41:11] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 01:41:12] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 01:41:12] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 01:41:13] "POST / HTTP/1.1" 403 2857
+[30/Aug/2017 04:21:37] "GET / HTTP/1.1" 200 13882
+[30/Aug/2017 05:55:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[30/Aug/2017 06:02:22] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[30/Aug/2017 06:02:27] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[30/Aug/2017 06:28:35] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 18:28:23] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 18:28:24] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 18:28:24] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 18:28:25] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 18:28:25] "POST / HTTP/1.1" 403 2857
+Forbidden (CSRF cookie not set.): /
+[30/Aug/2017 18:28:26] "POST / HTTP/1.1" 403 2857
+[30/Aug/2017 19:38:50] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[30/Aug/2017 21:54:36] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[31/Aug/2017 00:49:28] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[31/Aug/2017 04:40:27] "GET / HTTP/1.1" 200 13881
+[31/Aug/2017 11:04:03] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[31/Aug/2017 11:04:03] "    c                           " 400 -
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[31/Aug/2017 18:57:56] "GET / HTTP/1.0" 400 60830
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[31/Aug/2017 18:57:56] "GET / HTTP/1.0" 500 59
+[2017-08-31 18:57:56,422] - Broken pipe from ('106.75.85.117', 56710)
+
+[31/Aug/2017 18:58:08] "GET / HTTP/1.0" 200 13882
+[01/Sep/2017 12:59:52] "GET / HTTP/1.1" 200 13876
+Not Found: /manager/html
+[01/Sep/2017 22:08:45] "GET /manager/html HTTP/1.1" 404 3256
+[01/Sep/2017 22:26:16] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[01/Sep/2017 22:26:16] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[02/Sep/2017 00:33:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[02/Sep/2017 00:33:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[02/Sep/2017 05:15:52] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[02/Sep/2017 05:15:53] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[02/Sep/2017 10:11:06] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[03/Sep/2017 18:04:31] "GET / HTTP/1.1" 200 13876
+[04/Sep/2017 09:30:14] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[04/Sep/2017 19:10:05] "GET / HTTP/1.1" 200 13882
+Not Found: /manager/html
+[04/Sep/2017 19:32:45] "GET /manager/html HTTP/1.1" 404 3256
+Not Found: /manager/html
+[05/Sep/2017 09:39:58] "GET /manager/html HTTP/1.1" 404 3256
+[05/Sep/2017 22:27:56] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[05/Sep/2017 22:27:56] "    c                           " 400 -
+[06/Sep/2017 02:28:55] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[06/Sep/2017 19:00:48] "GET / HTTP/1.1" 200 13876
+[07/Sep/2017 03:14:05] code 400, message Bad request syntax ('SSH-2.0-libssh2_1.7.0')
+[07/Sep/2017 03:14:05] "SSH-2.0-libssh2_1.7.0" 400 -
+[07/Sep/2017 12:14:11] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[07/Sep/2017 12:14:11] "    c                           " 400 -
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[08/Sep/2017 01:38:41] "GET / HTTP/1.0" 400 60703
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[08/Sep/2017 01:38:41] "GET / HTTP/1.0" 500 59
+[2017-09-08 01:38:41,832] - Broken pipe from ('187.235.75.22', 4341)
+
+[08/Sep/2017 12:20:50] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[08/Sep/2017 21:45:03] "GET / HTTP/1.1" 200 13876
+[09/Sep/2017 06:36:40] code 400, message Bad request syntax ('SSH-2.0-libssh2_1.7.0')
+[09/Sep/2017 06:36:40] "SSH-2.0-libssh2_1.7.0" 400 -
+[09/Sep/2017 12:37:24] "GET / HTTP/1.1" 200 13876
+[09/Sep/2017 23:59:46] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[10/Sep/2017 07:17:23] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[10/Sep/2017 07:17:23] "    c                           " 400 -
+[10/Sep/2017 12:07:33] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[10/Sep/2017 13:18:43] "GET / HTTP/1.1" 200 13866
+[10/Sep/2017 13:18:43] "GET / HTTP/1.1" 200 13866
+[10/Sep/2017 13:18:43] "GET / HTTP/1.1" 200 13866
+[10/Sep/2017 15:30:14] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[10/Sep/2017 15:30:14] "    c                           " 400 -
+[10/Sep/2017 17:35:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[10/Sep/2017 17:35:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[12/Sep/2017 00:26:39] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03\xca`\xb3E\xa8CrI\xa2\xaa\xe3\xa9\xdd\xa7\xa0T"\x99\xe7Y\xae\x8eg\x95\xa5{^?\xcb=\xf3\xfd\x00\x00p\xc00\xc0,\xc02\xc0.\xc0/\xc0+\xc01\xc0-\x00\xa3\x00\x9f\x00\xa2\x00\x9e\xc0(\xc0$\xc0\x14\xc0')
+[12/Sep/2017 00:26:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[12/Sep/2017 00:26:43] "GET / HTTP/1.1" 200 13885
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[12/Sep/2017 03:05:01] "POST / HTTP/1.0" 400 60843
+[12/Sep/2017 03:37:36] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[13/Sep/2017 04:10:23] "GET / HTTP/1.1" 200 13876
+[13/Sep/2017 13:23:51] "GET / HTTP/1.1" 200 13880
+[14/Sep/2017 20:30:39] code 400, message Bad request syntax ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xe9\xd8\xd4\x05/Q\xe8P!\x14s\xd9TN\x05\xe9\x14\x10\xe7j\xbeF\xc3\x883P\xac\xffblnt\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+[14/Sep/2017 20:30:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 596, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 331, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 652, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 140, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+[14/Sep/2017 20:30:42] "GET / HTTP/1.1" 200 13866
+[15/Sep/2017 11:14:18] "GET / HTTP/1.1" 200 13876
+[16/Sep/2017 21:54:22] "GET / HTTP/1.1" 200 13866
+[17/Sep/2017 07:01:55] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[17/Sep/2017 07:23:28] code 400, message Bad request syntax ('JDWP-Handshake')
+[17/Sep/2017 07:23:28] "JDWP-Handshake" 400 -
+[17/Sep/2017 07:26:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[18/Sep/2017 16:22:32] "GET / HTTP/1.0" 400 60830
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[18/Sep/2017 16:22:32] "GET / HTTP/1.0" 500 59
+[2017-09-18 16:22:32,452] - Broken pipe from ('123.59.78.122', 51416)
+
+[18/Sep/2017 16:22:42] "GET / HTTP/1.0" 200 13880
+[18/Sep/2017 18:15:18] "GET / HTTP/1.1" 200 13876
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[18/Sep/2017 18:15:43] "GET / HTTP/1.0" 400 60705
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[18/Sep/2017 18:18:13] "GET / HTTP/1.0" 400 60705
+[18/Sep/2017 18:18:13] "GET / HTTP/1.1" 200 13866
+Invalid HTTP_HOST header: 'www'. You may need to add u'www' to ALLOWED_HOSTS.
+[18/Sep/2017 18:18:18] "GET / HTTP/1.1" 400 61078
+[19/Sep/2017 04:05:27] "GET / HTTP/1.1" 200 13876
+[19/Sep/2017 20:07:00] code 400, message Bad request syntax ('SSH-2.0-libssh2_1.7.0')
+[19/Sep/2017 20:07:00] "SSH-2.0-libssh2_1.7.0" 400 -
+[19/Sep/2017 21:38:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Sep/2017 21:38:55] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[21/Sep/2017 11:48:27] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Not Found: /recordings/
+[21/Sep/2017 14:53:10] "GET /recordings/ HTTP/1.1" 404 3253
+Not Found: /a2billing/admin/Public/index.php
+[21/Sep/2017 14:53:10] "GET /a2billing/admin/Public/index.php HTTP/1.1" 404 3316
+[21/Sep/2017 14:53:12] code 400, message Bad request syntax ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x03\xcc\x18\x92\x7f\xf9\x1d\xd6\x85Yi\xad\xbcK\xfdv\xbf#\xda\xe6\xb8v?\x1d=\x9dE\x9brT\xbb\xe5\xd6\x00\x006\xc0,\xc0')
+[21/Sep/2017 14:53:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[21/Sep/2017 14:53:12] code 400, message Bad request syntax ('\x16\x03\x01\x00\x98\x01\x00\x00\x94\x03\x03\xaf|?\xe0\xedh\x89\x8f\x1c4\xa3\xb7\xc5\xec\xfb\x1e\xad\x0f\x02_\xc2\x13#e\xf6\xd8\x02\xf9B\xbe\xd6a\x00\x006\xc0,\xc0')
+[21/Sep/2017 14:53:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[22/Sep/2017 15:51:00] "GET / HTTP/1.1" 200 13876
+[22/Sep/2017 17:00:31] "GET / HTTP/1.1" 200 13882
+[22/Sep/2017 17:00:31] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[22/Sep/2017 17:00:31] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[22/Sep/2017 17:00:31] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[22/Sep/2017 17:00:31] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[22/Sep/2017 17:00:31] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[22/Sep/2017 17:00:31] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[22/Sep/2017 17:00:31] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[22/Sep/2017 17:00:31] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[22/Sep/2017 17:00:32] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[22/Sep/2017 17:00:32] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[22/Sep/2017 17:00:32] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[22/Sep/2017 17:00:32] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[22/Sep/2017 17:00:37] "POST / HTTP/1.1" 200 14111
+[24/Sep/2017 10:53:58] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[24/Sep/2017 13:48:20] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[25/Sep/2017 07:04:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[25/Sep/2017 12:19:35] "POST / HTTP/1.0" 400 60843
+[25/Sep/2017 23:16:45] code 400, message Bad request syntax ('SSH-2.0-libssh2_1.7.0')
+[25/Sep/2017 23:16:45] "SSH-2.0-libssh2_1.7.0" 400 -
+[26/Sep/2017 00:25:01] "GET / HTTP/1.1" 200 13876
+[26/Sep/2017 09:45:20] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[26/Sep/2017 17:11:27] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[27/Sep/2017 05:34:52] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b\xa8\xc0\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x80 in position 25: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[28/Sep/2017 06:17:28] "GET / HTTP/1.1" 200 13876
+[28/Sep/2017 18:58:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[28/Sep/2017 21:51:36] "GET / HTTP/1.1" 200 13876
+[28/Sep/2017 23:15:21] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[29/Sep/2017 22:57:41] "GET / HTTP/1.1" 200 13866
+[29/Sep/2017 22:57:42] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[30/Sep/2017 20:26:32] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[01/Oct/2017 01:20:53] "GET / HTTP/1.0" 400 60704
+[01/Oct/2017 08:37:28] "GET / HTTP/1.1" 200 13885
+[01/Oct/2017 08:37:31] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[01/Oct/2017 13:13:52] "GET / HTTP/1.1" 200 13876
+[02/Oct/2017 00:07:27] "GET / HTTP/1.1" 200 13866
+[02/Oct/2017 00:07:27] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[03/Oct/2017 17:08:40] "GET / HTTP/1.1" 200 13876
+[05/Oct/2017 14:19:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[05/Oct/2017 21:33:42] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[05/Oct/2017 21:33:42] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[06/Oct/2017 05:44:27] "GET / HTTP/1.1" 200 13885
+[06/Oct/2017 05:44:31] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[07/Oct/2017 09:03:13] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[07/Oct/2017 13:07:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[07/Oct/2017 14:25:47] "GET / HTTP/1.1" 200 13876
+[08/Oct/2017 13:30:17] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[08/Oct/2017 13:30:17] "    c                           " 400 -
+[09/Oct/2017 17:52:00] "GET / HTTP/1.1" 200 13876
+[09/Oct/2017 19:40:49] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[11/Oct/2017 13:19:12] "GET / HTTP/1.1" 200 13876
+[12/Oct/2017 13:39:14] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[12/Oct/2017 13:39:14] "    c                           " 400 -
+[13/Oct/2017 19:29:55] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[14/Oct/2017 01:53:01] "GET / HTTP/1.1" 200 13876
+[15/Oct/2017 04:12:24] code 400, message Bad request version ('\xe0B\xe9\x18d\xddg\x1a\xbc8\x00\x00\xac\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+[15/Oct/2017 04:12:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[15/Oct/2017 13:07:53] "GET / HTTP/1.1" 200 13876
+[17/Oct/2017 01:51:36] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[17/Oct/2017 08:20:26] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[17/Oct/2017 18:48:26] "GET / HTTP/1.0" 400 60703
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[17/Oct/2017 18:48:26] "GET / HTTP/1.0" 500 59
+[2017-10-17 18:48:26,586] - Broken pipe from ('87.243.55.34', 38626)
+
+[17/Oct/2017 20:57:08] code 400, message Bad request syntax ('SSH-2.0-libssh2_1.7.0')
+[17/Oct/2017 20:57:08] "SSH-2.0-libssh2_1.7.0" 400 -
+[18/Oct/2017 08:54:19] "GET / HTTP/1.1" 200 13922
+[18/Oct/2017 08:54:20] "OPTIONS / HTTP/1.1" 200 13922
+Not Found: /Robots.txt
+[18/Oct/2017 08:54:20] "GET /Robots.txt HTTP/1.1" 404 3245
+Not Found: /SiteMap.xml
+[18/Oct/2017 08:54:21] "GET /SiteMap.xml HTTP/1.1" 404 3248
+Forbidden (CSRF cookie not set.): /
+[18/Oct/2017 08:54:21] "POST / HTTP/1.1" 403 2857
+[18/Oct/2017 10:42:13] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[18/Oct/2017 10:42:13] "    c                           " 400 -
+[19/Oct/2017 13:47:53] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Oct/2017 15:54:05] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[19/Oct/2017 17:03:09] "GET / HTTP/1.1" 200 13876
+[20/Oct/2017 21:38:06] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+Invalid HTTP_HOST header: u'test:8000'. You may need to add u'test' to ALLOWED_HOSTS.
+[21/Oct/2017 06:15:45] "POST / HTTP/1.0" 400 60843
+[21/Oct/2017 08:39:14] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[21/Oct/2017 09:11:08] "OPTIONS / HTTP/1.1" 200 13882
+Forbidden (CSRF cookie not set.): /
+[21/Oct/2017 09:11:09] "PROPFIND / HTTP/1.1" 403 2857
+[21/Oct/2017 09:12:24] "GET / HTTP/1.1" 200 13882
+[21/Oct/2017 09:12:24] "GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 29063
+[21/Oct/2017 09:12:24] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+[21/Oct/2017 09:12:24] "GET /static/css/creative.min.css HTTP/1.1" 200 7875
+[21/Oct/2017 09:12:24] "GET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1" 200 6951
+[21/Oct/2017 09:12:24] "GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 97163
+[21/Oct/2017 09:12:24] "GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+[21/Oct/2017 09:12:24] "GET /static/img/jarvis.jpg HTTP/1.1" 200 9822
+[21/Oct/2017 09:12:24] "GET /static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[21/Oct/2017 09:12:24] "GET /static/img/icon_2.jpg HTTP/1.1" 200 26909
+[21/Oct/2017 09:12:24] "GET /static/img/box/train.jpg HTTP/1.1" 200 227335
+[21/Oct/2017 09:12:24] "GET /static/img/cas/dream.jpeg HTTP/1.1" 200 109819
+[21/Oct/2017 09:12:25] "GET /static/favicon.ico HTTP/1.1" 200 1406
+[21/Oct/2017 09:12:28] "POST / HTTP/1.1" 200 14111
+[21/Oct/2017 09:12:30] "GET / HTTP/1.1" 200 13882
+[21/Oct/2017 09:13:09] "OPTIONS / HTTP/1.1" 200 13882
+Forbidden (CSRF cookie not set.): /
+[21/Oct/2017 09:13:09] "PROPFIND / HTTP/1.1" 403 2857
