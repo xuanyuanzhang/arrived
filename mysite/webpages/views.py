@@ -47,25 +47,34 @@ def index(request):
     # # client_info.append(locationInfo['region'])
     # client_info.append(locationInfo['country_name'])
     g = geocoder.ip(get_client_ip(request))
-    location = g.city + ", " + g.state + ", " + g.country
+    print g.city
+    print g.state
+    print g.country
+    if g.city == None or g.state == None or g.country == None:
+        location = "New York"
+    else:
+        location = g.city + ", " + g.state + ", " + g.country
+
+    text = ""
+    s = ""
 
     if request.method == 'POST':
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1);
+        s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         host = "127.0.0.1"
         port = "10003"
         s.connect((host, int(port)))
         text = request.POST["textfield"]
-	if text != "":
-		s.send(text)
-		data = s.recv(2048)
-		print "data is: " + data
-		if data[0:5] == "https":
-			dataTuple = [data, "url"]
-		else:
-			dataTuple = [data, "str"]
-		s.close()
-		return render(request, 'index.html', {"location": location, "text": dataTuple})
+    if text != "":
+        s.send(text)
+        data = s.recv(2048)
+        print "data is: " + data
+        if data[0:5] == "https":
+            dataTuple = [data, "url"]
+        else:
+            dataTuple = [data, "str"]
+        s.close()
+        return render(request, 'index.html', {"location": location, "text": dataTuple})
     return render(request, 'index.html', {"location": location})
 
 
